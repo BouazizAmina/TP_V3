@@ -1,7 +1,6 @@
 package com.example.tp3_v3
 
 import androidx.lifecycle.ViewModel
-import com.example.movieexample.Parking
 
 class MyModel: ViewModel() {
     // Les données à partager entre les fragments

@@ -1,10 +1,6 @@
-package com.example.movieexample
+package com.example.tp3_v3
 
-import android.widget.ImageView
-import android.widget.TextView
 import java.io.Serializable
-import java.sql.Time
-import java.time.LocalTime
 
 data class Parking(
     val image: Int,

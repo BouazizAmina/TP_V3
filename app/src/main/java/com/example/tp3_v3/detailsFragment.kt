@@ -8,8 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.movieexample.Parking
-import com.example.tp3_v3.databinding.FragmentDetailsBinding
 
 
 class detailsFragment : Fragment() {
@@ -27,8 +25,8 @@ class detailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val pos = arguments?.getInt("position") as Parking
-
+        var pos = arguments?.getInt("position")as? Parking
+//print(pos)
         pos?.image?.let { requireActivity().findViewById<ImageView>(R.id.imageParking).setImageResource(it).toString() }
         requireActivity().findViewById<TextView>(R.id.nom1).setText(pos?.nom)
         requireActivity().findViewById<TextView>(R.id.nom2).setText(pos?.nom)

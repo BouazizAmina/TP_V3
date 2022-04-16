@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.movieexample.Parking
 
 class MyAdapter(private val onItemClicked: (position: Int) -> Unit,val context: Context,var data:List<Parking>):RecyclerView.Adapter<MyAdapter.MyViewHolder>()
 {

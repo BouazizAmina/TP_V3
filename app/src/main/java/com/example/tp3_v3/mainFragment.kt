@@ -15,7 +15,7 @@ import com.example.tp3_v3.databinding.FragmentMainBinding
 
 class mainFragment : Fragment() {
 
-    private lateinit var binding : FragmentMainBinding
+//    private lateinit var binding : FragmentMainBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -41,6 +41,8 @@ class mainFragment : Fragment() {
 
     private fun onClickDevice(position: Int) {
         var bundle = bundleOf("position" to position)
+//        var bundle = Bundle()
+//        bundle.putInt("position",position)
         view?.findNavController()?.navigate(R.id.action_mainFragment_to_detailsFragment,bundle)
     }
 }
